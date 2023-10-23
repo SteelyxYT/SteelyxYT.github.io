@@ -4,6 +4,7 @@ main div ul li a {
 }
 
 main div ul li {
+    border: #000 1px solid;
     margin-top: 10%;
 }
 
