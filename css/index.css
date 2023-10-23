@@ -1,15 +1,22 @@
-
-main div ul li a{
-    text-align: left;
+main div ul li a {
     text-decoration: none;
     color: #000;
-
 }
-main div ul{
+
+main div ul li {
+    margin-top: 10%;
+}
+
+main div ul {
     list-style: none;
 }
-main{
+
+main div {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+main {
     display: flex;
     justify-content: flex-start;
 }
-
