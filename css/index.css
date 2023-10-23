@@ -1,0 +1,15 @@
+
+main div ul li a{
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+
+}
+main div ul{
+    list-style: none;
+}
+main{
+    display: flex;
+    justify-content: flex-start;
+}
+
