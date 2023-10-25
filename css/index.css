@@ -1,6 +1,11 @@
+* {
+    background-color: violet;
+}
+
 #content{
     border: 1px black solid;
-    border-radius:2%
+    border-radius: 2%;
+    background-color: grey;
 }
 
 main div ul li a {
@@ -15,6 +20,10 @@ footer {
     border: #000 1px solid;
 }
 
+header, header h1{
+    background-color: grey;
+}
+
 header {
     padding-left: 2%;
 }
@@ -26,6 +35,7 @@ main div ul li {
 }
 
 main {
+    background-color: whitesmoke;
     padding: 1%;
     display: flex;
     justify-content: flex-start;
@@ -37,6 +47,14 @@ main div {
     border-radius: 5%;
     padding-left: 2%;
     padding-right: 2%;
+}
+
+main div ul *{
+    background-color: orange;
+}
+
+main div *, main div{
+    background-color: aquamarine    ;
 }
 
 footer p {
@@ -51,8 +69,8 @@ header{
     border-right: none;
 }
 
-footer{
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+footer, footer *{
+    background-color: aliceblue;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
