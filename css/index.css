@@ -1,24 +1,58 @@
+#content{
+    border: 1px black solid;
+    border-radius:2%
+}
+
 main div ul li a {
     text-decoration: none;
     color: #000;
 }
 
+header,
+main,
+main div,
+footer {
+    border: #000 1px solid;
+}
+
+header {
+    padding-left: 2%;
+}
+
 main div ul li {
     border: #000 1px solid;
+    border-radius: 15%;
     margin-top: 10%;
 }
 
-main div ul {
-    list-style: none;
+main {
+    padding: 1%;
+    display: flex;
+    justify-content: flex-start;
+    min-height: 80vh;
 }
 
 main div {
+    max-height: 225px;
+    border-radius: 5%;
     padding-left: 2%;
     padding-right: 2%;
-    border: #000 1px solid;
 }
 
-main {
-    display: flex;
-    justify-content: flex-start;
+footer p {
+    padding-top: 5%;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+header{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+footer{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
 }
