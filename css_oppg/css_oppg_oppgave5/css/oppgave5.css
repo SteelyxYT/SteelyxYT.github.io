@@ -1,5 +1,6 @@
 header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     border: 1px black solid;
     padding-left: 2%;
@@ -14,17 +15,19 @@ header{
 
 main{
     display: flex;
+    flex-wrap: wrap;
     border: 1px black solid;
     padding-left: 2%;
 }
 
 .artikkler{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .artikkel {
-    max-width: 50%;
+    max-width: 550px;
     text-align: center;
 }
 
@@ -52,6 +55,7 @@ footer{
 
 .lists{
     display: flex;
+    flex-wrap: wrap;
     justify-content: start;
 }
 
@@ -61,7 +65,7 @@ footer{
 }
 
 .info{
-    margin-right: 20%;    
+    margin-right: 10%;    
 }
 
 footer p{
