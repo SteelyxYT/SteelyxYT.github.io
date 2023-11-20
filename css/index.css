@@ -1,111 +1,184 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    animation-name: background-page;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+  animation-name: background-page;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes background-page {
-    from {background-color: aliceblue;}
-    25% {background-color: aquamarine;}
-    50% {background-color: blue;}
-    75% {background-color: cyan;}
-    to {background-color: white;}
+  from {
+    background-color: aliceblue;
+  }
+  25% {
+    background-color: aquamarine;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: cyan;
+  }
+  to {
+    background-color: white;
+  }
 }
 
 #content {
-    border: 1px black solid;
-    border-radius: 2%;
-    background-color: grey;
+  border: 1px black solid;
+  border-radius: 2%;
+  background-color: grey;
 }
 
-main div ul li a {
-    text-decoration: none;
-    color: #000;
+.flex-container div ul li a {
+  text-decoration: none;
+  color: #000;
 }
 
 header,
-main,
-main div,
+.flex-container,
+.flex-container div,
 footer {
-    border: #000 1px solid;
-}
-
-header,
-header h1 {
-    background-color: grey;
-    color: purple;
+  border: #000 1px solid;
 }
 
 header {
-    padding-left: 2%;
+  background-color: grey;
+  color: purple;
 }
 
-main div ul li {
-    border: #000 1px solid;
-    border-radius: 15%;
-    margin-top: 10%;
+header h1{
+    color: black;
+}
+
+header img {
+  max-height: 10svh;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 2%;
+}
+
+header {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding-left: 2%;
+  display: flex;
+  overflow: hidden;
+}
+
+header a {
+    background-image: linear-gradient(20deg, orange, yellow);
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2%;
+  padding: 1%;
+  padding-bottom: 1%;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 1px black solid;
+}
+
+header a:hover{
+    background-image: none;
+background-color: black;
+color: white;
+transition: all 250ms ease-in;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1281px) {
+  header a {
+    animation-name: navigation-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
 }
 
 main {
-    background-color: whitesmoke;
-    padding: 1%;
-    display: flex;
-    justify-content: flex-start;
-    min-height: 80vh;
+  overflow: hidden;
 }
 
-main div {
-    max-height: 225px;
-    border-radius: 5%;
-    padding-left: 2%;
-    padding-right: 2%;
+.flex-container div ul li {
+  border: #000 1px solid;
+  border-radius: 15%;
+  margin-top: 10%;
 }
 
-main div ul * {
-    background-color: orange;
-    color: yellowgreen;
+.flex-container {
+  background-color: whitesmoke;
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  min-height: 80vh;
 }
 
-main div ul li a {
-    color: white;
+.flex-container div {
+  max-height: 225px;
+  border-radius: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
-main div *,
-main div {
-    background-color: aquamarine;
-    color: darkred;
+.flex-container div ul * {
+  background-color: orange;
+  color: yellowgreen;
+}
+
+.flex-container div ul li a {
+  color: white;
+}
+
+.flex-container div *,
+.flex-container div {
+  background-color: aquamarine;
+  color: darkred;
 }
 
 footer p {
-    padding-top: 5%;
-    text-align: center;
-    margin-bottom: auto;
-    color: indianred
+  padding-top: 5%;
+  text-align: center;
+  margin-bottom: auto;
+  color: indianred;
 }
 
 header {
-    border-top: none;
-    border-left: none;
-    border-right: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 footer,
 footer * {
-    background-color: rgb(151, 180, 195);
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+  background-color: rgb(151, 180, 195);
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 20px grey;
-    border-radius: 10px;
+  box-shadow: inset 0 0 20px grey;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: turquoise;
-    border-radius: 20px;
+  background-color: turquoise;
+  border-radius: 20px;
+}
+
+#om_meg {
+  display: flex;
+  background-color: white;
+}
+
+#om_meg div {
+  font-size: 80%;
+}
+
+#om_meg img {
+  height: 90svh;
 }
