@@ -4,7 +4,19 @@ main {
     justify-content: space-between;
 }
 main div{
+    text-align: center;
     width: 500px;
+    margin: 0px;
+}
+main div *{
+    margin-left: auto;
+    margin-right: auto;
+}
+main div h5{
+    max-width: 475px;
+}
+main div p{
+    max-width: 475px;
 }
 main div img{
     width: 500px;
