@@ -116,6 +116,7 @@ main {
 
 .flex-container div {
   max-height: 225px;
+  max-width: 275px;
   border-radius: 5%;
   padding-left: 2%;
   padding-right: 2%;
@@ -124,10 +125,16 @@ main {
 .flex-container div ul * {
   background-color: orange;
   color: yellowgreen;
+  list-style: none;
 }
 
 .flex-container div ul li a {
   color: white;
+}
+
+.flex-container div ul{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .flex-container div *,
