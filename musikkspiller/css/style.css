@@ -1,0 +1,83 @@
+body {
+  margin: 0px;
+}
+nav {
+  text-align: left;
+  display: flex;
+  border-bottom: 1px black solid;
+  background-color: #424242;
+  overflow: hidden;
+}
+main{
+  text-align: center;
+}
+nav div strong{
+  font-size: 50px;
+}
+nav a {
+  border-left: 0.5px darkgrey solid;
+  border-right: 0.5px darkgray solid;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 20px;
+}
+#logo{
+  margin-left: 10px;
+  margin-right: 20px;
+}
+header img {
+  max-width: 1920px;
+  width: 100%;
+}
+.cc-hero-img {
+  border: 1px solid grey;
+  background-color: beige;
+  padding: 5px;
+}
+footer {
+  border-top: 1px black solid;
+}
+#img-container h1 {
+  color:#90B7E4;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 550%;
+}
+#highlightsMusikk {
+  justify-content: space-evenly;
+  border: 1px black solid;
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#highlightsMusikk div * {
+  display: block;
+}
+#highlightsMusikk div {
+  flex-basis: 40%;
+  flex-grow: 1;
+  margin-left: 11px;
+  margin-right: 11px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border: 0.2px black solid;
+  border-radius: 20px;
+}
+#viktig {
+  display: flex;
+  justify-content: space-evenly;
+}
+.info {
+  text-align: center;
+}
+.info * {
+  display: block;
+}
+footer {
+  padding-top: 50px;
+  text-align: center;
+}
