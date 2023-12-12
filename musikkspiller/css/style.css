@@ -45,6 +45,11 @@ footer {
   transform: translate(-50%, -50%);
   font-size: 550%;
 }
+@media only screen and (max-width: 820px) {
+  #img-container h1{
+    top: 15%;
+  }
+}
 #highlightsMusikk {
   justify-content: space-evenly;
   border: 1px black solid;
