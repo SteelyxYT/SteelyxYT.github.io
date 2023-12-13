@@ -1,23 +1,33 @@
 body {
   text-align: center;
   margin: 0px;
-}
+} /* ordner plassering av text og fjerner plass på sider */
 nav {
   text-align: center;
   display: flex;
   border-bottom: 1px black solid;
   background-color: #424242;
   overflow: hidden;
-}
+} /* sette stil av navigasjon */
 #logo strong {
   font-size: 50px;
   color: yellow;
-}
-#logo p{
+} /* Sette størelse på logo tekst og farge */
+#logo p {
   margin-top: 0%;
   color: yellow;
+} /* Setter teksten marginer og farge på tekst under logo */
+#nav-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+} /* sette flex for */
+
+/* #lenker{
+  margin-left: 5%;
 }
-/* nav a {
+#lenker a {
+  margin-left: 2%;
   border-left: 0.5px darkgrey solid;
   border-right: 0.5px darkgray solid;
   text-decoration: none;
@@ -27,19 +37,20 @@ nav {
 #logo {
   margin-left: auto;
   margin-right: auto;
-}
+} /* midstile logo */
 main img {
   max-width: 1920px;
   width: 100%;
-}
-main{
-  background-color:rgb(223, 82, 31);
-}
+} /* sette størrelse av bilde */
+main {
+  background-color: rgb(223, 82, 31);
+}/* bakgrunnsfarge til hoved inneholdet */
 .cc-hero-img {
   border: 1px solid grey;
-  background-color:palegoldenrod;
+  background-color: palegoldenrod;
   padding: 5px;
-}
+  border-radius: 20px;
+}/* sette boksen rundt copyright infoen */
 #img-container h1 {
   color: #4ca2cd;
   position: absolute;
@@ -47,46 +58,62 @@ main{
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 550%;
-}
+}/* sette størelsen av teksten på bilde */
 @media only screen and (max-width: 820px) {
   #img-container h1 {
     top: 20%;
     font-size: 300%;
   }
-}
+}/* sette plassering på mindre skjerm størelser */
 @media only screen and (max-width: 304px) {
   #img-container h1 {
     top: 17%;
     font-size: 200%;
   }
-}
+}/* optimalisere plassering for mindre skjermer */
 @media only screen and (max-width: 275px) {
   #img-container h1 {
     top: 15%;
     font-size: 200%;
   }
-}
+} /* optimalisere plassering for mindre skjermer */
 @media only screen and (max-width: 495px) {
   #highlightsMusikk {
     flex-direction: column;
   }
-}
-#innehold{
-  padding-top: 5%;
-  padding-bottom: 15%;
-}
+} /* sette når den skal gå i liste form */
+#innehold {
+  padding-top: 4%;
+  padding-bottom: 10%;
+}/* sette rom i hoved inneholdet  */
 #highlightsMusikk {
   justify-content: space-evenly;
   border: 1px black solid;
-  background-color:rgb(206, 63, 63);
+  background-color: rgb(206, 63, 63);
   margin-bottom: 5px;
   display: flex;
   flex-wrap: wrap;
-}
+}/* setter stil for spotify sang grid */
+#om {
+  border: 1px black solid;
+  background-color: rgb(206, 63, 63);
+  margin-bottom: 5px;
+}/* lager box for om queen */
+#om h2 {
+  color: rgb(255, 255, 35);
+}/* setter farge for title om queen */
+#om p {
+  background-color: white;
+  font: caption;
+  font-size: larger;
+  margin: 3%;
+  border-radius: 20px;
+}/* setter stil for tekst på om queen */
 
 #highlightsMusikk div * {
   display: block;
-}
+}/* setter alle elementer inni div til block */
+
 #highlightsMusikk div {
   flex-basis: 40%;
   flex-grow: 1;
@@ -97,31 +124,32 @@ main{
   text-align: center;
   border: 0.2px black solid;
   border-radius: 20px;
-}
+}/* sette stil for bokser under musikk highlights */
 #nyttig-info {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 30px;
-}
+}/* sette flex på nyttig info */
 .info {
   text-align: center;
-}
+}/* midtstile info */
 .info * {
   display: block;
   text-decoration: none;
   font-size: large;
   font-weight: bolder;
   color: rgb(67, 71, 71);
-}
+} /* setter stil for alt under info */
 .info *:hover {
   color: rgb(21, 29, 35);
-}
+}/* når hover endre farge i footer */
 footer {
   padding-top: 50px;
   background-color: #a48f8f;
   text-align: center;
   border-top: 1px black solid;
-}
-footer strong{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+}/* forming av footer */
+footer strong {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+} /* legge font til skole oppgave  */
