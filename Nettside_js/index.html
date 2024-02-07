@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <table id="jsOutput">
+      <tr id="tableHeader">
+        <th>name</th>
+        <th>age</th>
+        <th>role</th>
+      </tr>
+    </table>
+    <button onclick="listStrings(users, false)">refresh table</button>
+
+    <button onclick="listStrings(users, true)">refresh with cars</button>
+
+    <button onclick="listStrings(users, undefined)">cars only</button>
+
+    <br>
+
+    <label for="name">name</label>
+    <input type="text" name="name" id="name" placeholder="name"/>
+    <label for="age">age</label>
+    <input type="number" name="age" id="age" placeholder="age"/>
+    <label for="role">role</label>
+    <input type="text" name="role" id="role" placeholder="student or teacher"/>
+    <label for="cars">cars</label>
+    <input type="text" name="cars" id="cars">
+    <button onclick="addUser()">submit</button>
+
+
+    <form action="">
+      <label for="email">email</label>
+      <input type="email" name="email" id="email">
+      <label for="password">password</label>
+      <input type="password" name="password" id="password">
+      <button onclick="">Submit</button>
+    </form>
+
+    <!-- * Starts the main script -->
+    <script src="./scripts/test.js"></script>
+  </body>
+</html>
