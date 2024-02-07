@@ -13,9 +13,10 @@ function ApiCallYr(pos){
   .then((json) => {
     JsonData = json;
     timetable = json.properties.timeseries;
-    console.log(json.properties)
-});
-timetable.timeseries.forEach(element => {
+    timetable.forEach(element => {
     console.log(element.data)
 });
+    console.log(json.properties)
+});
+
 }
