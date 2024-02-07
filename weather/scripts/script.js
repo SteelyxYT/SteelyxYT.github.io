@@ -7,13 +7,15 @@ function startWeatherTrack(){
 
 function ApiCallYr(pos){
     let JsonData;
+    let timetable;
     fetch(`https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}`,{method: "GET"})
     .then((response) => response.json())
   .then((json) => {
     JsonData = json;
+    timetable = json.properties.timeseries;
     console.log(json.properties)
 });
-JsonData.properties.timeseries.forEach(element => {
+timetable.forEach(element => {
     console.log(element.data)
 });
 }
