@@ -15,7 +15,7 @@ function ApiCallYr(pos){
     timetable = json.properties.timeseries;
     console.log(json.properties)
 });
-timetable.forEach(element => {
+timetable.timeseries.forEach(element => {
     console.log(element.data)
 });
 }
