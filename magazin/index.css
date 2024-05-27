@@ -1,0 +1,87 @@
+html{
+    color-scheme: dark;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    background-color: #565656;
+    color: white;
+    font-size: 11.5px;
+    font-weight: 400;
+    font-family: Inter;
+    border-bottom: 2px black solid;
+}
+
+.offensive, .defensive{
+    padding: 0 15%;
+    font-size: 11px;
+    font-weight: 250;
+    font-family: Inter;
+}
+
+.temaer{
+    margin: 0 5%;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Inter;
+}
+
+.innholdfor {
+    margin-top: 7%;
+}
+
+.item-container {
+    width: 20%;
+    padding: 2% 2%;
+    border: 1px black solid;
+    border-radius: 5%;
+    background-color: #444950;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    color: #969faf;
+}
+
+.defensive-tema {
+    margin: 5% 0;
+}
+
+h1 {
+    white-space: nowrap;
+}
+
+p, h1, h2, h3, h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Courier, monospace;
+}
+
+
+
+.defensive {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.56), #565656);
+}
+
+.offensive {
+    background: linear-gradient(90deg, #565656, rgba(0, 0, 0, 0.56));
+}
+
+img {
+    width: 100%;
+    max-height: 95vh;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@1,500&display=swap">
+</head>
+
+<body>
+    <header>
+        <div class="defensive">
+            <h2><a href="#temaer">Defensive</a></h2>
+        </div>
+        <h1>The cyber syndicate</h1>
+        <div class="offensive">
+            <h2><a href="#temaer">Offensive</a></h2>
+        </div>
+    </header>
+    <div class="frontpage">
+        <img src="./img.png" alt="The cybersyndicate frontpage image">
+    </div>
+    <div class="innholdfor">
+        <div class="temaer" id="temaer">
+            <div class="offensive-tema">
+                <h3>Offensive</h3>
+                <div class="list">
+                    <div class="item-container">
+                        <div class="item-content">
+                            <h4>Web Application Hacking</h4>
+                            <p>Learn how to hack into websites and steal sensitive information</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-content">
+                            <h4>Social Engineering</h4>
+                            <p>Learn how to manipulate people into giving you access to their personal information</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-content">
+                            <h4>Penetration Testing</h4>
+                            <p>Learn how to test the security of websites and networks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="defensive-tema">
+                <h3>Defensive</h3>
+                <div class="list">
+                    <div class="item-container">
+                        <div class="item-content">
+                            <h4>Secure Coding</h4>
+                            <p>Learn how to write secure code to protect your website and applications from hackers</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-content">
+                            <h4>Network Security</h4>
+                            <p>Learn how to secure your network and protect it from hackers</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-content">
+                            <h4>Incident Response</h4>
+                            <p>Learn how to respond to a security breach and minimize the damage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            var frontpage = document.querySelector('.frontpage');
+            var inneholdfor = document.querySelector('.inneholdfor');
+            var scrollPosition = window.scrollY;
+            var frontpageHeight = frontpage.offsetHeight;
+            var opacity = 1 - (scrollPosition / frontpageHeight);
+    
+            frontpage.style.opacity = opacity > 0 ? opacity : 0;
+            inneholdfor.style.opacity = 1 - opacity > 0 ? 1 - opacity : 0;
+        });
+    </script>
+    
+
+</body>
+
+</html>
